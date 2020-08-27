@@ -3,6 +3,7 @@ Analysis of asset correlations: stocks indexes, gold, silver, bitcoin
 
 ### Assets tested (data from yahoo finance)
 **Only assets listed in euro are used to prevent currency differences**
+
 *No suitable broad bond index with >5y of historical data was found, thus bonds are not included*
 
 * BTC-EUR : Bitcoin [€]
