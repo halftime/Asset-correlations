@@ -30,23 +30,27 @@ for (i in 1:length(file_names))
   {
     file_a <- file_names[i]
     file_b <- file_names[j]
-    
     df_a <- read_file(file_a)
     df_b <- read_file(file_b)
-    
     merged <- merge(x = df_a, y = df_b, by="row.names")
     merged <- tail(merged, 60)
-    
     model <- lm(merged$Return.x ~ merged$Return.y)
     summary <- summary(model)
-    beta = summary$coefficients[2, 1]
     p = summary$coefficients[2, 4]
-    
     corr = cor(merged$Return.x, merged$Return.y)
-    
     df_corr[i, j] <- round(corr, 2)
-    df_beta[i, j] <- round(beta, 2)
   }
+  
+  file_b <- file_names[2]
+  df_b <- read_file(file_b)
+  
+  merged <- merge(x = df_a, y = df_b, by="row.names")
+  merged <- tail(merged, 60)
+  
+  model <- lm(merged$Return.x ~ merged$Return.y)
+  summary <- summary(model)
+  beta = summary$coefficients[2, 1]
+  df_beta[i, 2] <- round(beta, 2)
 }
 
 print (df_corr)
