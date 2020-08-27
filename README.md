@@ -13,9 +13,7 @@ Analysis of asset correlations: stocks indexes, gold, silver, bitcoin
 * PHAU.MI : WisdomTree Physical Gold [€]
 
 #### 5y monthly 2015-08-01 <> 2020-07-01
-Correlation & Beta
-<<<<<<< HEAD
+**Correlation & Beta**
 ![Correlation & Beta](https://i.imgur.com/gKZ9Cvq.png)
-=======
-![Correlation & Beta](https://i.imgur.com/WkQkayM.png)
->>>>>>> 8b29d4127508eab765e2f0a92ba152d907ef9776
+
+
